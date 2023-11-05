@@ -21,3 +21,8 @@ Try to connect via ansible using your password and user root
 ansible all -i inventory -m ping -u root --ask-pass -vvv
 ```
 
+To use short command use provided in repository Makefile
+```
+make ssh_ping
+```
+
