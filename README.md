@@ -15,3 +15,9 @@ Next the following snippet is important for the first ssh connection. Ssh must b
 [servers:vars]
 ansible_ssh_common_args = '-o PreferredAuthentications=password -o PubkeyAuthentication=no -o PasswordAuthentication=yes'
 ```
+
+Try to connect via ansible using your password and user root
+```
+ansible all -i inventory -m ping -u root --ask-pass -vvv
+```
+
