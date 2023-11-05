@@ -1,0 +1,5 @@
+[servers]
+your.ip.address.here
+
+[servers:vars]
+ansible_ssh_common_args = '-o PreferredAuthentications=password -o PubkeyAuthentication=no -o PasswordAuthentication=yes'
